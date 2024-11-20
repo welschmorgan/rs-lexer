@@ -1,0 +1,20 @@
+[package]
+name = "lexer-derive"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+keywords.workspace = true
+license-file.workspace = true
+repository.workspace = true
+readme.workspace = true
+description = "Lexer derive macros"
+
+[lib]
+name = "lexer_derive"
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.87", features = ["parsing"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+convert_case = "0.6.0"
